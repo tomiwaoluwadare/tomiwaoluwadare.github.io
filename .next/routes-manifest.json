@@ -1,0 +1,145 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "/out",
+  "redirects": [
+    {
+      "source": "/out",
+      "destination": "/out/",
+      "basePath": false,
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^/out$"
+    },
+    {
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
+      "internal": true,
+      "priority": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [
+      {
+        "source": "/out//_next/:path+",
+        "destination": "/out/_next/:path+",
+        "regex": "^/out//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+      }
+    ],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/eligibility_checks/amw_renewable_ppa_eligibility_form",
+      "regex": "^/eligibility_checks/amw_renewable_ppa_eligibility_form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/eligibility_checks/amw_renewable_ppa_eligibility_form(?:/)?$"
+    },
+    {
+      "page": "/eligibility_checks/beas_grants_eligibility_form",
+      "regex": "^/eligibility_checks/beas_grants_eligibility_form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/eligibility_checks/beas_grants_eligibility_form(?:/)?$"
+    },
+    {
+      "page": "/eligibility_checks/warm_home_discount_scheme_form",
+      "regex": "^/eligibility_checks/warm_home_discount_scheme_form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/eligibility_checks/warm_home_discount_scheme_form(?:/)?$"
+    },
+    {
+      "page": "/eligibility_results/amw_renewable_energy_eligibility_result",
+      "regex": "^/eligibility_results/amw_renewable_energy_eligibility_result(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/eligibility_results/amw_renewable_energy_eligibility_result(?:/)?$"
+    },
+    {
+      "page": "/eligibility_results/beas_scheme_eligibility_result",
+      "regex": "^/eligibility_results/beas_scheme_eligibility_result(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/eligibility_results/beas_scheme_eligibility_result(?:/)?$"
+    },
+    {
+      "page": "/eligibility_results/warm_home_discount_scheme_result",
+      "regex": "^/eligibility_results/warm_home_discount_scheme_result(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/eligibility_results/warm_home_discount_scheme_result(?:/)?$"
+    },
+    {
+      "page": "/mandatory_form/amw-renewable-ppa-form",
+      "regex": "^/mandatory_form/amw\\-renewable\\-ppa\\-form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mandatory_form/amw\\-renewable\\-ppa\\-form(?:/)?$"
+    },
+    {
+      "page": "/mandatory_form/beas-grants-form",
+      "regex": "^/mandatory_form/beas\\-grants\\-form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mandatory_form/beas\\-grants\\-form(?:/)?$"
+    },
+    {
+      "page": "/mandatory_form/ppa-assessment-form",
+      "regex": "^/mandatory_form/ppa\\-assessment\\-form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mandatory_form/ppa\\-assessment\\-form(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/eligibility_results/layout,_N_T_/eligibility_results/beas_scheme_eligibility_result/layout,_N_T_/eligibility_results/beas_scheme_eligibility_result/page,_N_T_/eligibility_results/beas_scheme_eligibility_result/"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/eligibility_results/beas_scheme_eligibility_result/__PAGE__",
+    "/eligibility_results/beas_scheme_eligibility_result",
+    "/eligibility_results",
+    "/_index"
+  ]
+}

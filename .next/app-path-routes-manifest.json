@@ -1,0 +1,14 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/eligibility_checks/amw_renewable_ppa_eligibility_form/page": "/eligibility_checks/amw_renewable_ppa_eligibility_form",
+  "/eligibility_checks/beas_grants_eligibility_form/page": "/eligibility_checks/beas_grants_eligibility_form",
+  "/eligibility_checks/warm_home_discount_scheme_form/page": "/eligibility_checks/warm_home_discount_scheme_form",
+  "/eligibility_results/amw_renewable_energy_eligibility_result/page": "/eligibility_results/amw_renewable_energy_eligibility_result",
+  "/eligibility_results/beas_scheme_eligibility_result/page": "/eligibility_results/beas_scheme_eligibility_result",
+  "/eligibility_results/warm_home_discount_scheme_result/page": "/eligibility_results/warm_home_discount_scheme_result",
+  "/mandatory_form/amw-renewable-ppa-form/page": "/mandatory_form/amw-renewable-ppa-form",
+  "/mandatory_form/beas-grants-form/page": "/mandatory_form/beas-grants-form",
+  "/mandatory_form/ppa-assessment-form/page": "/mandatory_form/ppa-assessment-form",
+  "/page": "/"
+}
