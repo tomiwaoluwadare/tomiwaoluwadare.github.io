@@ -7,8 +7,8 @@ const isProduction = true;
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: isProduction ? '/sostainability' : '',
-  assetPrefix: isProduction ? '/sostainability/' : '',
+  basePath: isProduction ? '/out' : '',
+  assetPrefix: isProduction ? '/out/' : '',
 }
 
 module.exports = nextConfig
