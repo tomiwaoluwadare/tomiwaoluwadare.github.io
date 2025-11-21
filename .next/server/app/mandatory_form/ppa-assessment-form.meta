@@ -2,7 +2,7 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/mandatory_form/layout,_N_T_/mandatory_form/ppa-assessment-form/layout,_N_T_/mandatory_form/ppa-assessment-form/page,_N_T_/mandatory_form/ppa-assessment-form/"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/mandatory_form/layout,_N_T_/mandatory_form/ppa-assessment-form/layout,_N_T_/mandatory_form/ppa-assessment-form/page,_N_T_/mandatory_form/ppa-assessment-form"
   },
   "segmentPaths": [
     "/_tree",
