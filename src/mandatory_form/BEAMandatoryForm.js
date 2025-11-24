@@ -510,7 +510,7 @@ export default function BEAMandatoryForm() {
                     disabled={!isFormValid()}
                     className="px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-700 rounded-lg text-base font-semibold text-white hover:from-green-700 hover:to-emerald-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
                   >
-                    Submit PPA Application
+                    Submit Application
                     <FaArrowRight className="w-5 h-5 ml-2" />
                   </button>
                 </div>

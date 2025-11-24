@@ -5,7 +5,7 @@ import PPAMandatoryForm from './mandatory_form/PPAMandatoryForm';
 import BEAMandatoryForm from './mandatory_form/BEAMandatoryForm';
 import AMWMandatoryForm from './mandatory_form/AMWMandatoryForm';
 
-import PPAligibilityForm from './eligibility_checks/PPAligibilityForm';
+import PPAEligibilityForm from './eligibility_checks/PPAEligibilityForm';
 import BEASEligibilityForm from './eligibility_checks/BEASEligibilityForm';
 import AMWEligibilityForm from './eligibility_checks/AMWEligibilityForm';
 
@@ -17,22 +17,22 @@ export default function App() {
   return (
     <Router>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/why-us" element={<Home />} />
-        <Route path="/products" element={<Home />} />
-        <Route path="/how-it-works" element={<Home />} />
-        <Route path="/mandatory_form/ppa-form" element={<PPAMandatoryForm />} />
-        <Route path="/mandatory_form/beas-form" element={<BEAMandatoryForm />} />
-        <Route path="/mandatory_form/amw-form" element={<AMWMandatoryForm />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/why-us" element={<Home />} />
+          <Route path="/products" element={<Home />} />
+          <Route path="/how-it-works" element={<Home />} />
+          <Route path="/mandatory_form/ppa-form" element={<PPAMandatoryForm />} />
+          <Route path="/mandatory_form/beas-form" element={<BEAMandatoryForm />} />
+          <Route path="/mandatory_form/amw-form" element={<AMWMandatoryForm />} />
 
-        <Route path="/eligibility_checks/ppa-check" element={<PPAligibilityForm />} />
-        <Route path="/eligibility_checks/beas-check" element={<BEASEligibilityForm />} />
-        <Route path="/eligibility_checks/amw-check" element={<AMWEligibilityForm />} />
+          <Route path="/eligibility_checks/ppa-check" element={<PPAEligibilityForm />} />
+          <Route path="/eligibility_checks/beas-check" element={<BEASEligibilityForm />} />
+          <Route path="/eligibility_checks/amw-check" element={<AMWEligibilityForm />} />
 
-        <Route path="/eligibility_results/ppa-result" element={<PPAResultPage />} />
-        <Route path="/eligibility_results/beas-result" element={<BEASResultPage />} />
-        <Route path="/eligibility_results/amw-result" element={<AMWResultPage />} />
+          <Route path="/eligibility_results/ppa-result" element={<PPAResultPage />} />
+          <Route path="/eligibility_results/beas-result" element={<BEASResultPage />} />
+          <Route path="/eligibility_results/amw-result" element={<AMWResultPage />} />
         </Routes>
     </Router>
   );

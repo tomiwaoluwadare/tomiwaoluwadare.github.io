@@ -670,7 +670,7 @@ export default function AMWEligibilityForm() {
                 <div className="flex justify-between items-center pt-6">
                   <button
                     type="button"
-                    onClick={() => window.location.href = '/mandatory_form/amw-renewable-ppa-form'}
+                    onClick={() => window.location.href = '#/mandatory_form/amw-form'}
                     className="px-8 py-4 border border-gray-300 rounded-lg text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 transition-all duration-200 flex items-center"
                   >
                     <FaArrowLeft className="w-5 h-5 mr-2" />

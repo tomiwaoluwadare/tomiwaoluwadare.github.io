@@ -19,7 +19,7 @@ import {
 import Header from '../homepage/Header';
 import Footer from '../homepage/Footer';
 
-export default function PPAligibilityForm() {
+export default function PPAEligibilityForm() {
 
   // Initialize with localStorage data directly to avoid flash of empty state
   const getInitialFormData = () => {
@@ -196,7 +196,7 @@ export default function PPAligibilityForm() {
       localStorage.setItem('whd_epcRating', formData.epcRating);
       localStorage.setItem('whd_termsAccepted', JSON.stringify(formData.termsAccepted));
       
-      window.location.replace('#/eligibility_results/amw-result');
+      window.location.replace('#/eligibility_results/ppa-result');
 
     } else {
       console.log('Form has validation errors');
@@ -570,7 +570,7 @@ export default function PPAligibilityForm() {
                 <div className="flex justify-between items-center pt-6">
                   <button
                     type="button"
-                    onClick={() => window.location.href = '/mandatory_form/ppa-assessment-form'}
+                    onClick={() => window.location.href = '#/mandatory_form/ppa-form'}
                     className="px-8 py-4 border border-gray-300 rounded-lg text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 transition-all duration-200 flex items-center"
                   >
                     <FaArrowLeft className="w-5 h-5 mr-2" />
